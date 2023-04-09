@@ -8,19 +8,23 @@
 body {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, #ccabd8, #fa8978);
+    background: #fa8978;
+}
+
+.outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .form-div {
     background: rgb(31, 28, 28);
     margin: auto;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 450px;
+    min-height: 500px;
+    min-width: 450px;
+    border: 2px solid white;
 }
 
 .form-div h1 {
@@ -36,13 +40,14 @@ body {
     color: #ccabd8;
     padding-left: 9%;
     padding-top: 5%;
+    padding-right: 9%;
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
 }
 
 #form input[type="text"], input[type="number"], input[type="email"] {
-    max-width: 90%;
+    max-width: 100%;
     min-height: 30px;
     border: none;
     background: none;
@@ -82,7 +87,6 @@ input[type="number"]::-webkit-outer-spin-button
     background: #ccabd8;
     border: none;
     min-height: 30px;
-    max-width: 90%;
     color: rgb(31, 28, 28);
     border-radius: 5px;
     cursor: pointer;
@@ -102,8 +106,8 @@ input[type="number"]::-webkit-outer-spin-button
     word-spacing: 2px;
 }
 
-@media only screen and (max-width: 600px) {
-    .form-div{
+@media screen and (max-width: 600px) {
+    .outer{
         max-width: 400px;
         margin: auto 20px;
     }    
