@@ -15,9 +15,23 @@
             <label for="name">NAME</label>
             <input type="text" id="name"><br>
             <label for="age">AGE</label>
-            <input id="age" type="number"><br>
+            <input type="number" id="age"><br>
             <label for="email">EMAIL</label>
             <input type="email" id="email"><br>
+            <div class="radio">
+                <p>GENDER</p>
+                <input type="radio" id="male" value="Male" name="gender">  
+                <label for="male">Male</label>      
+                <input type="radio" id="female" value="Female" name="gender">   
+                <label for="female">Female</label>
+                <p>FAVOURITE SPORT</p>
+                <input type="checkbox" id="cricket" value="Cricket" name="fav-sport">  
+                <label for="cricket">Cricket</label>  
+                <input type="checkbox" id="football" value="Football" name="fav-sport">   
+                <label for="football">Football</label>
+                <input type="checkbox" id="others" value="Others" name="fav-sport">  
+                <label for="others">Others</label>
+            </div>
             <button id="button" type="button">SUBMIT</button>
         </form>
         <div id="message"></div>
