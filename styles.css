@@ -105,6 +105,6 @@ input[type="number"]::-webkit-outer-spin-button
 @media only screen and (max-width: 600px) {
     .form-div{
         max-width: 200px;
-        margin: auto 10px;
+        margin: auto 20px;
     }    
 }
