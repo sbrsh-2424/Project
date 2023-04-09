@@ -6,14 +6,14 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
     background: linear-gradient(to right, #ccabd8, #fa8978);
 }
 
 .form-div {
-    height: 500px;
-    width: 450px;
+    max-height: 500px;
+    max-width: 450px;
     background-color: rgb(31, 28, 28);
     margin: auto;
     top: 50%;
@@ -40,8 +40,8 @@ body {
 }
 
 #form input {
-    width: 360px;
-    height: 30px;
+    max-width: 360px;
+    max-height: 30px;
     border-radius: 5px;
     background: rgb(31, 28, 28);
     border: 2px solid #fa8978;
@@ -51,8 +51,8 @@ body {
 #form button {
     background-color: #ccabd8;
     border: none;
-    height: 30px;
-    width: 360px;
+    max-height: 30px;
+    max-width: 360px;
     color: rgb(31, 28, 28);
     border-radius: 5px;
     cursor: pointer;
